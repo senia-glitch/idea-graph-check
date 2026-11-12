@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ideagraph-check"
+version = "0.1.0"
+description = "Пакет-скилл: проверка графа идеи на противоречия, дубли и пробелы"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["ideagraph-core @ git+https://github.com/senia-glitch/idea-graph-core.git"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.entry-points."ideagraph.packages"]
+check = "ideagraph_check:manifest"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ideagraph_check = ["*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
