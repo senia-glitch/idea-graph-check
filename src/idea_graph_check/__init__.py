@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from ideagraph_core import DETAIL, PROPOSED, ROOT_KIND, views
+from idea_graph_core import DETAIL, PROPOSED, ROOT_KIND, views
 
 __version__ = "0.1.0"
 

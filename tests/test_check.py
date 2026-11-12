@@ -1,8 +1,8 @@
 import pytest
 
-from ideagraph_check import (ABOUT, BLOCKING, NOTE, REMARK, code_findings, conclude, manifest, prepare, scope,
+from idea_graph_check import (ABOUT, BLOCKING, NOTE, REMARK, code_findings, conclude, manifest, prepare, scope,
                              sync_remarks)
-from ideagraph_core import DETAIL, HUMAN, Store
+from idea_graph_core import DETAIL, HUMAN, Store
 
 
 class Ctx:
